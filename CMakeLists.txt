@@ -14,8 +14,11 @@ file(GLOB SOURCES
 include_directories("./include")
 include_directories("./src")
 
-add_executable(NavXTimeStamp ${SOURCES})
+add_library(navx ${SOURCES})
 
-target_link_libraries(NavXTimeStamp ${CMAKE_THREAD_LIBS_INIT})
-#target_compile_features(NavXTimeStamp PRIVATE cxx_range_for)
+add_executable(NavXTimeStamp NavXTimeStamp/TimeStamp.cpp)
+target_link_libraries(NavXTimeStamp navx)
+
+target_link_libraries(navx ${CMAKE_THREAD_LIBS_INIT})
+#target_compile_features(navx PRIVATE cxx_range_for)
 
