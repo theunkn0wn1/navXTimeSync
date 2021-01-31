@@ -7,7 +7,6 @@ FIND_PACKAGE (Threads REQUIRED)
 
 
 file(GLOB SOURCES
-	"include/*.h"
 	"src/*.cpp"
 )
 

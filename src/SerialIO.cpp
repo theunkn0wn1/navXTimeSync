@@ -5,7 +5,7 @@
  *      Author: Scott
  */
 
-#include <SerialIO.h>
+#include "SerialIO.h"
 #include <time.h>
 #include <unistd.h>
 #include <string>

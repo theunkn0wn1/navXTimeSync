@@ -10,7 +10,7 @@
 
 //include "WPILIb.h"
 
-#include "SerialPort.cpp"
+#include "SerialPort.h"
 #include "IIOProvider.h"
 #include <stdint.h>
 #include <string.h>
