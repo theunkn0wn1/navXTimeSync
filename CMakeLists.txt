@@ -7,11 +7,12 @@ FIND_PACKAGE (Threads REQUIRED)
 
 
 file(GLOB SOURCES
-	"*.h"
-	"*.cpp"
+	"include/*.h"
+	"src/*.cpp"
 )
 
-include_directories(".")
+include_directories("./include")
+include_directories("./src")
 
 add_executable(NavXTimeStamp ${SOURCES})
 
