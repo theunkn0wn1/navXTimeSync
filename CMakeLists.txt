@@ -16,7 +16,7 @@ include_directories("./src")
 
 add_library(navx ${SOURCES})
 
-add_executable(NavXTimeStamp NavXTimeStamp/TimeStamp.cpp)
+add_executable(NavXTimeStamp NavXTimeStamp/main.cpp)
 target_link_libraries(NavXTimeStamp navx)
 
 target_link_libraries(navx ${CMAKE_THREAD_LIBS_INIT})
