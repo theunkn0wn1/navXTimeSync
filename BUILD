@@ -4,7 +4,7 @@ cc_library(
 	hdrs = glob(["include/*.h", "include/*.cpp"]),
 	strip_include_prefix = "include/",
 	linkopts = ["-lpthread"],  # this library depends on threading..
-
+    visibility = ["//visibility:public"],
 )
 
 
@@ -12,4 +12,5 @@ cc_binary(
     name = "navXTimeStamp",
     srcs = glob(["NavXTimeStamp/*.cpp"]),
     deps = [":libnavx"],
-    )
+    visibility = ["//visibility:public"],
+)
