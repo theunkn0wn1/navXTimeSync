@@ -2,6 +2,10 @@ CMakeCache.txt
 cmake_install.cmake
 CMakeFiles
 Makefile
+bazel-bin
+bazel-out
+bazel-testlogs
+cmake-build-debug
 *.o
 *.bin
 *.so
