@@ -12,7 +12,7 @@ This repository provides bindings use `libnavx` in larger bazel builds.
 ## `WORKSPACE`
 ```python
 def navx_workspace():
-    # bring navx driver into scope so it can be linked against for Odin nodes.
+    # bring navx driver into scope so it can be linked against.
 
     # Note: an HTTP archive rule is used as its more lightweight and has less overhead
     # than using a git source directly.
