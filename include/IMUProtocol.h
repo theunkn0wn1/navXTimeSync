@@ -22,6 +22,8 @@ THE SOFTWARE.
 ===============================================
  */
 
+#include <cstdint>
+
 #ifndef _IMU_PROTOCOL_H_
 #define _IMU_PROTOCOL_H_
 

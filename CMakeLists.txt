@@ -15,6 +15,7 @@ include_directories("./include")
 include_directories("./src")
 
 add_library(navx ${SOURCES})
+target_include_directories(navx PUBLIC ./include src)
 
 add_executable(NavXTimeStamp NavXTimeStamp/main.cpp)
 target_link_libraries(NavXTimeStamp navx)
